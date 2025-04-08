@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anusha S | Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Times New Roman', serif;
+          color: #000;
+          height: 100%;
+          font-size: 20px;
+          background-color: white;
+        }
+
+        #vanta-bg {
+          width: 100%;
+          min-height: 100vh;
+          position: relative;
+          overflow-x: hidden;
+          z-index: 0;
+        }
+
+        .container {
+          padding: 40px;
+          max-width: 1000px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        header {
+          text-align: center;
+          margin-bottom: 20px;
+          animation: fadeIn 2s ease-in;
+        }
+
+        nav ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        nav ul li {
+          display: inline;
+          margin: 0 15px;
+        }
+
+        nav ul li a {
+          color: #e91e63;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+          color: #000000;
+        }
+
+        section {
+          margin-bottom: 50px;
+          animation: slideIn 1.5s ease-in-out;
+        }
+
+        h2 {
+          color: #e91e63;
+          margin-bottom: 10px;
+        }
+
+        footer {
+          text-align: center;
+          padding: 20px;
+          font-size: 0.9em;
+          color: #555;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+          from { transform: translateY(30px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div id="vanta-bg">
+    <div class="container">
+        <header>
+            <h1>Anusha S</h1>
+            <p>Computer Science Student | Java & Web Developer</p>
+            <p>
+                <a href="mailto:roopaanusha46@gmail.com">roopaanusha46@gmail.com</a> |
+                <a href="https://linkedin.com/in/anusha-s-a54b4227b">LinkedIn</a> |
+                <a href="https://github.com/roopaanusha">GitHub</a>
+            </p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a highly motivated and detail-oriented Computer Science student with strong problem-solving and programming skills. Experienced in Java and web development, I design user-friendly applications and enjoy front-end design, database management, and performance optimization.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java</li>
+                <li><strong>Web Development:</strong> HTML, CSS</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Soft Skills:</strong> Problem Solving, Hard Work, Teamwork</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>B.E. in Computer Science</strong><br>Mysuru Royal Institute of Technology, Mandya<br>CGPA: 7.76</p>
+            <p><strong>PUC in PCMC</strong><br>Marimallappa PU College, Mysore<br>74%</p>
+            <p><strong>SSLC</strong><br>St. Anne's High School, Srirangapatna<br>86%</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Online Shopping Management System</strong><br>Developed a shopping platform using HTML, CSS, JS, PHP, and MySQL. Implemented secure authentication and APIs for seamless functionality.</p>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul>
+                <li>Certified Java Developer</li>
+                <li>HackerRank Java Basic Certificate</li>
+                <li>Certified C Programming Language</li>
+            </ul>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <p>Cooking, Sports, Listening to Music</p>
+        </section>
+
+        <section id="awards">
+            <h2>Awards</h2>
+            <ul>
+                <li>Taluk-level volleyball and throwball player - 2019</li>
+                <li>Participant - Generative AI Workshop, 2024</li>
+                <li>Singing and cultural performances, 2023</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Anusha S. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xe91e63, // pink lines
+      backgroundColor: 0xffffff, // white background
+      points: 12.0,
+      maxDistance: 20.0,
+      spacing: 15.0
+    });
+</script>
+</body>
+</html>
